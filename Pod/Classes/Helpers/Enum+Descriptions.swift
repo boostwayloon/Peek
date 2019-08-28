@@ -151,6 +151,8 @@ extension UIActivityIndicatorView.Style: PeekDescribing {
         case .gray: return "Small Gray"
         case .white: return "Small White"
         case .whiteLarge: return "Large White"
+        default:
+            return ""
         }
     }
     
@@ -164,6 +166,8 @@ extension UIDatePicker.Mode: PeekDescribing {
         case .date: return "Date"
         case .dateAndTime: return "Date and Time"
         case .time: return "Time"
+        default:
+            return ""
         }
     }
     
@@ -209,6 +213,7 @@ extension UIBarButtonItem.SystemItem: PeekDescribing {
         case .stop: return "Stop"
         case .trash: return "Trash"
         case .undo: return "Undo"
+        default: return ""
         }
     }
     
@@ -342,6 +347,7 @@ extension UIModalPresentationStyle: PeekDescribing {
         case .pageSheet: return "Page Sheet"
         case .popover: return "Popover"
         case .blurOverFullScreen: return "Blur Over Full Screen"
+        default: return ""
         }
     }
     
@@ -386,6 +392,7 @@ extension UIButton.ButtonType: PeekDescribing {
         case .infoLight: return "Info Light"
         case .system: return "System"
         case .plain: return "Plain"
+        default: return ""
         }
     }
     
